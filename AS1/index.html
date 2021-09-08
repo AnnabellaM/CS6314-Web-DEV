@@ -1,0 +1,364 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <style>
+    /* Style buttons */
+    .btn-header {
+      background-color: inherit; 
+      border: none; /* Remove borders */
+      color: #adb5bd; 
+      padding: 12px 16px; /* Some padding */
+      font-size: 14px; /* Set a font size */
+    }
+
+    .font-header {
+      font-family: arial;
+      font-size: 50px;
+      color: white;
+    }
+
+    .font-normal-title {
+      font-family: avenir;
+      font-size: 16px;
+    }
+
+    .font-footer-large {
+      font-family: arial;
+      font-size: 20px;
+      color: white;
+    }
+
+    .font-footer-middle {
+      font-family: arial;
+      font-size: 18px;
+      color: white;
+    }
+
+    .font-footer-small {
+      font-family: arial;
+      font-size: 15px;
+      color: white;
+    }
+
+    .font-footer-media-header {
+      font-family: arial;
+      font-size: 16px;
+      color: #0FC9E7;
+    }
+
+    .font-footer-media-body {
+      font-family: arial;
+      font-size: 15px;
+      font-style: italic;
+      color: white;
+    }
+
+    .border-thin {
+      border-width: 1px;
+      border-color: #C9CCD5;
+      border-radius: 3px;
+      border-style: solid;
+    }
+
+    .button-group-default {
+      border-width: 1px;
+      border-color: #E8F0F2;
+      border-radius: 4px;
+      background-color: white;
+    }
+
+    .label-tag {
+      background-color: #002366;
+      color: white;
+      font-size: 12px;
+      font-family: arial;
+      border-radius: 2px;
+      padding: 5px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+
+    .image-spacing {
+      padding: 10px;
+      margin: 15px;
+    }
+
+    .vertical-center {
+      margin-left: 5%;
+      margin-right: 5%;
+      height: 10%;
+    }
+
+    .image-rounded {
+      border-radius: 50%;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>Share Your Travels</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" style="background-color: #012443;">
+      <div class="col-md-9"></div>
+      <div class="col-md-3">
+        <button class="btn-header"><i class="bi bi-box-arrow-in-right"></i> Logout </button>
+        <button class="btn-header"><i class="bi bi-person-fill"></i> Profile </button>
+        <button class="btn-header"><i class="bi bi-star-fill"></i> Favorites </button>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #002366;">
+    <div class="container-fluid">
+      <p class="font-header ms-5 mb-2 me-5">Share Your Travels</p>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Browse
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Continents</a></li>
+              <li><a class="dropdown-item" href="#">Countries</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row" style="background-color: #E8F0F2">
+      <div class="col-md-2">
+        <div class="modal-dialog mt-3 ms-5 me-3">
+          <ul class="list-group">
+            <li class="list-group-item font-normal-title" style="background-color: #170055; color: white;">Continents</li>
+            <li class="list-group-item" style="color: #1976d2;">Africa</li>
+            <li class="list-group-item" style="color: #1976d2;">Asia</li>
+            <li class="list-group-item" style="color: #1976d2;">Europe</li>
+            <li class="list-group-item" style="color: #1976d2;">North America</li>
+            <li class="list-group-item" style="color: #1976d2;">Oceania</li>
+            <li class="list-group-item" style="color: #1976d2;">South America</li>
+          </ul>
+        </div>
+        <div class="modal-dialog mt-3 ms-5 me-3">
+          <ul class="list-group">
+            <li class="list-group-item font-normal-title" style="background-color: #170055; color: white;">Popular Countries</li>
+            <li class="list-group-item" style="color: #1976d2;">Canada</li>
+            <li class="list-group-item" style="color: #1976d2;">France</li>
+            <li class="list-group-item" style="color: #1976d2;">Italy</li>
+            <li class="list-group-item" style="color: #1976d2;">Germany</li>
+            <li class="list-group-item" style="color: #1976d2;">Ghana</li>
+            <li class="list-group-item" style="color: #1976d2;">Greece</li>
+            <li class="list-group-item" style="color: #1976d2;">Hungary</li>
+            <li class="list-group-item" style="color: #1976d2;">Spain</li>
+            <li class="list-group-item" style="color: #1976d2;">United States</li>
+            <li class="list-group-item" style="color: #1976d2;">United Kingdom</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-8">
+            <img class="ms-2 me-2 mt-3" src="images/temple.jpg" width="100%">
+            <p class="ms-2" style="color: #3E2C41;">Located on the western perimeter of Agora in Athens. Built in 460-415 BCE, it is the best preserved temple of antiquity.</p>
+          </div>
+          <div class="col-md-4">
+            <p class="ms-2 mt-5" style="font: 50px bold; Arial; ">Temple of Hephaistos</p>
+            <div class="card ms-2 me-5">
+              <div class="card-body mt-2 mb-2">
+                <p class="card-text" style="color: #3E2C41;">By: <span style="color: #39A2DB;">Ellie Sullivan</span></p>
+                <p class="card-text" style="color: #3E2C41;">Country: <span style="color: #39A2DB;">Greece</span></p>
+                <p class="card-text" style="color: #3E2C41;">City: <span style="color: #39A2DB;">Athens</span></p>
+                <p class="card-text" style="color: #3E2C41;">Taken on: August 8, 2017</p>
+              </div>
+            </div>
+            <div class="btn-group d-flex mt-4 mb-2 ms-2 me-5">
+              <button class="button-group-default py-1" style="width:25%"><i class="bi bi-suit-heart-fill"></i></button>
+              <button class="button-group-default" style="width:25%"><i class="bi bi-download"></i></button>
+              <button class="button-group-default" style="width:25%"><i class="bi bi-printer-fill"></i></button>
+              <button class="button-group-default" style="width:25%"><i class="bi bi-chat-left-fill"></i></button>
+            </div>
+            <p class="ms-2 mt-3" style="font: 30px bold; Arial; ">Tags</p>
+            <div class="panel panel-primary border-thin ms-2 mt-3 me-5" style="background-color: white;">
+              <div class="panel-body" style="padding: 15px;">
+                <label class="label-tag">garden</label>
+                <label class="label-tag">hill</label>
+                <label class="label-tag">sunshine</label>
+                <label class="label-tag">temple</label>
+                <label class="label-tag">ancient</label>
+                <label class="label-tag">flower</label>
+                <label class="label-tag">tree</label>
+                <label class="label-tag">mysterious</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="ms-2 mt-3" style="font: 40px bold; Arial; ">Related Photos</p>
+        <div class="row me-5">
+          <div class="col-sm border-thin image-spacing">
+            <img src="images/related/8710320515.jpg" class="img-thumbnail mx-auto d-block"/> 
+            <p class="font-normal-title" style="text-align: center; margin-top: 5px;">Ekklisia Agii Isidori</p>
+            <div class="vertical-center"> 
+              <button type="button" class="btn btn-primary me-1"><i class="bi bi-eye"></i> View</button>
+              <button type="button" class="btn btn-danger"><i class="bi bi-heart"></i> Favorite</button>
+            </div>
+          </div>
+          <div class="col-sm border-thin image-spacing">
+            <img src="images/related/8710513053.jpg" class="img-thumbnail mx-auto d-block"/> 
+            <p class="font-normal-title" style="text-align: center; margin-top: 5px;">Theatre of Dionysus</p>
+            <div class="vertical-center"> 
+              <button type="button" class="btn btn-primary me-1"><i class="bi bi-eye"></i> View</button>
+              <button type="button" class="btn btn-danger"><i class="bi bi-heart"></i> Favorite</button>
+            </div>
+          </div>
+          <div class="col-sm border-thin image-spacing">
+            <img src="images/related/8711623884.jpg" class="img-thumbnail mx-auto d-block"/> 
+            <p class="font-normal-title" style="text-align: center; margin-top: 5px;">Roman Agora</p>
+            <div class="vertical-center"> 
+              <button type="button" class="btn btn-primary me-1"><i class="bi bi-eye"></i> View</button>
+              <button type="button" class="btn btn-danger"><i class="bi bi-heart"></i> Favorite</button>
+            </div>
+          </div>
+          <div class="col-sm border-thin image-spacing">
+            <img src="images/related/9494475161.jpg" class="img-thumbnail mx-auto d-block"/> 
+            <p class="font-normal-title" style="text-align: center; margin-top: 5px;">Temple of Asklepios</p>
+            <div class="vertical-center"> 
+              <button type="button" class="btn btn-primary me-1"><i class="bi bi-eye"></i> View</button>
+              <button type="button" class="btn btn-danger"><i class="bi bi-heart"></i> Favorite</button>
+            </div>
+          </div>
+          <div class="col-sm border-thin image-spacing">
+            <img src="images/related/9498388516.jpg" class="img-thumbnail mx-auto d-block"/> 
+            <p class="font-normal-title" style="text-align: center; margin-top: 5px;">Ekklisia Agii Isidori</p>
+            <div class="vertical-center"> 
+              <button type="button" class="btn btn-primary me-1"><i class="bi bi-eye"></i> View</button>
+              <button type="button" class="btn btn-danger"><i class="bi bi-heart"></i> Favorite</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="background-color: #002366;">
+      <div class="col-md-6">
+        <p class="font-footer-large ms-3 mt-3">Share Your Travels</p>
+        <p class="font-footer-small ms-3">For pictures on the page, use images.zip folder. Unzip the file and save “images” folder under the same directory with your html file. Retain same folder structure and file names and use relative paths for defining image sources. </p>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="font-footer-middle ms-3">Headquarters</p>
+            <p class="font-footer-small ms-3">For pictures on the page, use images.zip folder. Unzip the file and save “images” folder under the same directory with your html file. Retain same folder structure and file names and use relative paths for defining image sources. </p>
+          </div>
+          <div class="col-md-6">
+            <p class="font-footer-middle ms-3">Follow Us</p>
+            <span class="ms-3">
+              <button type="button" class="btn btn-danger btn-md">
+                <i class="bi bi-camera"></i>
+              </button>
+              <button type="button" class="btn btn-primary btn-md">
+                <i class="bi bi-person-fill"></i>
+              </button>
+              <button type="button" class="btn btn-dark btn-md">
+                <i class="bi bi-tags"></i>
+              </button>
+              <button type="button" class="btn btn-secondary btn-md">
+                <i class="bi bi-bookmark"></i>
+              </button>
+              <button type="button" class="btn btn-success btn-md">
+                <i class="bi bi-globe"></i>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <p class="font-footer-middle ms-1 mt-3"><i class="bi bi-pencil-fill me-2"></i>Recent Posts</p>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="images/footer/6592294487.jpg" class="media-object image-rounded" style="width:60px">
+          </div>
+          <div class="col-md-7 mt-2">
+            <h4 class="font-footer-media-header">Calgary in the Snow</h4>
+            <p class="font-footer-media-body">5 minutes ago</p>
+            <hr style="color: #E8F0F2">
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="images/footer/6114904363.jpg" class="media-object image-rounded" style="width:60px">
+          </div>
+          <div class="col-md-7 mt-2">
+            <h4 class="font-footer-media-header">Mountain Climbing</h4>
+            <p class="font-footer-media-body">11 minutes ago</p>
+            <hr style="color: #E8F0F2">
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="images/footer/5856697109.jpg" class="media-object image-rounded" style="width:60px">
+          </div>
+          <div class="col-md-7 mt-2">
+            <h4 class="font-footer-media-header">Nowa Sootha</h4>
+            <p class="font-footer-media-body">23 minutes ago</p>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <p class="font-footer-middle ms-1 mt-3"><i class="bi bi-envelope-fill me-2"></i>Contact Us</p>
+        <form class="me-3">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Enter name..." class="form-control mb-2">
+          </div>
+          <div class="form-group">
+            <input type="text" name="email" placeholder="Enter email..." class="form-control mb-2">
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Enter message..." class="form-control mb-2 py-3"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Submit" class="btn btn-success form-control">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row" style="background-color: #012443;">
+      <p class="font-footer-small mt-4" style="text-align: center">Copyright @ 2017 Creative Commons ShareAllbe</p>
+      <nav style="text-align: center" aria-label="breadcrumb">
+        <ol class="breadcrumb" style="color: #1976d2; display: inline-block;">
+          <li class="breadcrumb-item" style="color: #1976d2; display: inline-block;">Home</li>
+          <li class="breadcrumb-item" style="color: #1976d2; display: inline-block;">About</li>
+          <li class="breadcrumb-item active" style="color: #1976d2; display: inline-block;">Contact</li>
+          <li class="breadcrumb-item active" style="color: #1976d2; display: inline-block;">Browse</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
