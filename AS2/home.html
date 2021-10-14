@@ -1,0 +1,92 @@
+<!doctype html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="myCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="myJQuery.js"></script>
+    
+    <title>Share Your Travels</title>
+  </head>
+
+  <body>
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body myModal">
+            <img class="myImage" src="" alt="">
+            <p class="mt-2">Modal body text goes here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row" style="background-color: #012443;">
+        <div class="col-md-9"></div>
+        <div class="col-md-3">
+          <button class="btn-header"><i class="bi bi-box-arrow-in-right"></i> Logout </button>
+          <button class="btn-header"><i class="bi bi-person-fill"></i> Profile </button>
+          <button class="btn-header"><i class="bi bi-star-fill"></i> Favorites </button>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #002366;">
+      <div class="container-fluid">
+        <p class="font-header ms-5 mb-2 me-5">Share Your Travels</p>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Browse
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Continents</a></li>
+                <li><a class="dropdown-item" href="#">Countries</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex me-3">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </nav>
+    <div style="display: flex; justify-content: center;">
+      <table id="travels" style="align-self: center;"></table>
+    </div>
+    <div class="container-fluid">
+      <div class="row" style="background-color: #012443;">
+        <p class="font-footer-small mt-4" style="text-align: center">Copyright @ 2017 Creative Commons ShareAllbe</p>
+        <nav style="text-align: center" aria-label="breadcrumb">
+          <ol class="breadcrumb" style="color: #1976d2; display: inline-block;">
+            <li class="breadcrumb-item" style="color: #1976d2; display: inline-block;">Home</li>
+            <li class="breadcrumb-item" style="color: #1976d2; display: inline-block;">About</li>
+            <li class="breadcrumb-item active" style="color: #1976d2; display: inline-block;">Contact</li>
+            <li class="breadcrumb-item active" style="color: #1976d2; display: inline-block;">Browse</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+  </html>

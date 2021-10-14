@@ -1,0 +1,20 @@
+.gray {
+    filter: grayscale(90%);
+  }
+
+.myImage {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+ }
+
+.myModal {
+  background-color: #434242;
+  color: white;
+  font-size: 14px;
+}
+
+.image-spacing {
+  margin: 5px;
+  padding: 0px;
+}
